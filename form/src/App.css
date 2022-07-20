@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  padding: 40px 0;
+  color: #fff;
+}
+.container > form {
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid blue;
+  border-radius: 10px;
+}
+.img {
+  opacity: 0.7;
+  width: 100vw;
+  height: 125vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 250px;
+  text-align: right;
+  font-size: 16px;
+  border: 1px solid blue;
+}
+select {
+  text-align: right;
+  width: 275px;
+  height: 35px;
+  margin: 7px 5px 50px 0;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+.error-message {
+  color: red;
+  font-size: 13px;
+}
+input[type="submit"] {
+  width: 100px;
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+  transform: scale(0.98);
+  text-align: center;
+}
+input[type="submit"]:hover:enabled {
+  background-color: blue;
+  cursor: pointer;
+  transform: scale(1);
+}
+input[type="submit"]:disabled {
+  cursor: auto;
+  background-color: gray;
+  opacity: 0.9;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 200px;
+  height: 160px;
+  background-color: #fff;
+  margin-top: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  line-height: 0.5rem;
+  margin: 10px;
+  padding: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.nameAndlastName {
+  display: flex;
+  margin-top: -5px;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  z-index: 1000;
+}
+.overlayStyles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.footer {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .img {
+    height: auto;
+  }
+  .footer {
+    display: block;
+  }
+}
